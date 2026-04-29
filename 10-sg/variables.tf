@@ -14,9 +14,9 @@ variable "sg_names" {
         # Frontend ALB
         "ingress_alb",
         # Bastion
-        "bastion"
+        "bastion",
         # OpenVpn
-        "openvpn"
+        "openvpn",
         "eks_control_plane","eks_node"
     ]
 }
