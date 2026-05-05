@@ -72,7 +72,6 @@ resource "aws_lb_listener_rule" "frontend" {
   }
 }
 
-
 resource "aws_route53_record" "www" {
   zone_id = var.zone_id
   name    = "*.${var.domain_name}"
@@ -89,8 +88,9 @@ resource "aws_route53_record" "www" {
 
 resource "aws_lb_target_group" "frontend" {
   name     = "${var.project}-${var.environment}-frontend"
-  port     = 8080
+  port     = 80
   protocol = "HTTP"
+  # if this is VM target group, then target_type should be instance. if target_type is IP pods will come and register here.
   vpc_id   = local.vpc_id
   deregistration_delay = 60
 
