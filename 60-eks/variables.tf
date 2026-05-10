@@ -1,4 +1,5 @@
 variable "project" {
+<<<<<<< HEAD
   default = "roboshop"
 }
 
@@ -24,4 +25,11 @@ variable "eks_nodegroup_blue_version" {
 
 variable "eks_nodegroup_green_version" {
   default = ""
+=======
+    default = "roboshop"
+}
+
+variable "environment" {
+    default = "dev"
+>>>>>>> b97ed309e70a83f239533b290e6630091f838dee
 }

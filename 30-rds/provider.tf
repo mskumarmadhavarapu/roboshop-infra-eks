@@ -7,11 +7,7 @@ terraform {
   }
  backend "s3" {
     bucket   = "remote-state-mskdaws88s" # Replace with your bucket name
-<<<<<<< HEAD
-    key      = "roboshop-eks-vpc"
-=======
-    key      = "terraform-eks-vpc"
->>>>>>> b97ed309e70a83f239533b290e6630091f838dee
+    key      = "roboshop-eks-rds"
     region   = "us-east-1" # Replace with your desired region
     encrypt  = true                               # Encrypt state file at rest
     use_lockfile  = true

@@ -12,5 +12,9 @@ output "private_subnet_ids" {
 
 output "database_subnet_ids" {
     value = module.vpc.database_subnet_ids
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> b97ed309e70a83f239533b290e6630091f838dee

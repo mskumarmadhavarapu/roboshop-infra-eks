@@ -139,6 +139,7 @@ resource "aws_security_group_rule" "eks_node_vpc_cidr" {
   # Where traffic is coming from
   cidr_blocks = ["0.0.0.0/16"]
   security_group_id = local.eks_node_sg_id
+<<<<<<< HEAD
 }
 
 ## As Part of CICD ####
@@ -200,4 +201,6 @@ resource "aws_security_group_rule" "sonar_ssh" {
   # VPC CIDR
   cidr_blocks = ["0.0.0.0/0"]
   security_group_id = local.sonar_sg_id
+=======
+>>>>>>> b97ed309e70a83f239533b290e6630091f838dee
 }

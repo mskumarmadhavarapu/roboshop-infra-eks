@@ -40,6 +40,7 @@ data "aws_ssm_parameter" "eks_node_sg_id" {
 
 data "aws_ssm_parameter" "openvpn_sg_id" {
   name  = "/${var.project}/${var.environment}/openvpn_sg_id"
+<<<<<<< HEAD
 }
 
 data "aws_ssm_parameter" "jenkins_sg_id" {
@@ -52,3 +53,6 @@ data "aws_ssm_parameter" "jenkins_agent_sg_id" {
 
 data "aws_ssm_parameter" "sonar_sg_id" {
     name = "/${var.project}/${var.environment}/sonar_sg_id"
+=======
+}
+>>>>>>> b97ed309e70a83f239533b290e6630091f838dee
